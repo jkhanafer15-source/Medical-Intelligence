@@ -1,0 +1,568 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f7f9fc;
+
+  color: #132238;
+}
+
+
+/* ============================= */
+/* APP */
+/* ============================= */
+
+.appLayout {
+  min-height: 100vh;
+
+  display: flex;
+}
+
+
+/* ============================= */
+/* SIDEBAR */
+/* ============================= */
+
+.sidebar {
+  width: 16rem;
+
+  min-height: 100vh;
+
+  background: white;
+
+  border-right: 1px solid #e5eaf1;
+
+  padding: 1.5rem 1rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  position: fixed;
+
+  left: 0;
+
+  top: 0;
+
+  bottom: 0;
+
+  z-index: 100;
+}
+
+
+.sidebarLogo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.75rem;
+
+  margin-bottom: 2.5rem;
+
+  padding: 0 0.5rem;
+}
+
+
+.logoIcon {
+  width: 2.6rem;
+
+  height: 2.6rem;
+
+  background: #eaf4ff;
+
+  color: #1683df;
+
+  border-radius: 0.7rem;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+.logoText h2 {
+  font-size: 0.95rem;
+
+  margin: 0;
+
+  color: #12365c;
+}
+
+
+.logoText span {
+  display: block;
+
+  color: #1683df;
+
+  font-size: 0.85rem;
+
+  font-weight: 600;
+}
+
+
+/* ============================= */
+/* SIDEBAR NAV */
+/* ============================= */
+
+.sidebarNav {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.5rem;
+
+  flex: 1;
+}
+
+
+.sidebarLink {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.8rem;
+
+  text-decoration: none;
+
+  color: #5c6879;
+
+  padding: 0.75rem 0.9rem;
+
+  border-radius: 0.6rem;
+
+  font-size: 0.9rem;
+
+  transition: 0.2s;
+}
+
+
+.sidebarLink:hover {
+  background: #f1f7fd;
+
+  color: #1683df;
+}
+
+
+.activeSidebarLink {
+  background: #eaf4ff;
+
+  color: #1683df;
+
+  font-weight: 600;
+}
+
+
+.sidebarBottom {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.4rem;
+}
+
+
+.sidebarButton {
+  background: none;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 100%;
+}
+
+
+/* ============================= */
+/* MAIN CONTENT */
+/* ============================= */
+
+.mainContent {
+  margin-left: 16rem;
+
+  width: calc(100% - 16rem);
+
+  min-height: 100vh;
+}
+
+
+/* ============================= */
+/* TOPBAR */
+/* ============================= */
+
+.topbar {
+  width: 100%;
+
+  min-height: 4.5rem;
+
+  background: white;
+
+  border-bottom: 1px solid #e5eaf1;
+
+  padding: 0.8rem 2rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 1.5rem;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 50;
+}
+
+
+.searchBox {
+  flex: 1;
+
+  max-width: 42rem;
+
+  height: 2.7rem;
+
+  background: #f7f9fc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 0.6rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.6rem;
+
+  padding: 0 0.9rem;
+
+  color: #8a96a6;
+}
+
+
+.searchBox input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  font-size: 0.9rem;
+}
+
+
+.topbarRight {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+
+.notificationButton {
+  width: 2.5rem;
+
+  height: 2.5rem;
+
+  border-radius: 50%;
+
+  border: 1px solid #e2e8f0;
+
+  background: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+
+.doctorProfile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.6rem;
+}
+
+
+.doctorAvatar {
+  width: 42px;
+  height: 42px;
+
+  min-width: 42px;
+  min-height: 42px;
+
+  max-width: 42px;
+  max-height: 42px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+.topbarProfileImage {
+  display: block;
+
+  width: 42px !important;
+  height: 42px !important;
+
+  min-width: 42px;
+  min-height: 42px;
+
+  max-width: 42px;
+  max-height: 42px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+}
+
+.doctorInfo {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.doctorInfo strong {
+  font-size: 0.85rem;
+}
+
+
+.doctorInfo span {
+  font-size: 0.7rem;
+
+  color: #7d8998;
+}
+
+
+/* ============================= */
+/* PAGE CONTENT */
+/* ============================= */
+
+.pageContent {
+  width: 100%;
+
+  max-width: 100rem;
+
+  margin: auto;
+
+  padding: 2rem;
+}
+
+
+/* ============================= */
+/* MOBILE NAVBAR */
+/* ============================= */
+
+.mobileNavbar {
+  display: none;
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+  .sidebar {
+    width: 5rem;
+
+    padding: 1.5rem 0.6rem;
+  }
+
+
+  .logoText,
+  .sidebarLink span {
+    display: none;
+  }
+
+
+  .sidebarLogo {
+    justify-content: center;
+  }
+
+
+  .sidebarLink {
+    justify-content: center;
+
+    padding: 0.8rem;
+  }
+
+
+  .mainContent {
+    margin-left: 5rem;
+
+    width: calc(100% - 5rem);
+  }
+
+
+  .topbar {
+    padding: 0.8rem 1.2rem;
+  }
+
+
+  .pageContent {
+    padding: 1.5rem;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    display: none;
+  }
+
+
+  .mainContent {
+    margin-left: 0;
+
+    width: 100%;
+  }
+
+
+  .topbar {
+    display: none;
+  }
+
+
+  .mobileNavbar {
+    display: flex;
+
+    min-height: 4rem;
+
+    width: 100%;
+
+    background: white;
+
+    border-bottom:
+      1px solid #e5eaf1;
+
+    align-items: center;
+
+    justify-content:
+      space-between;
+
+    padding: 0 1rem;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 200;
+  }
+
+
+  .mobileLogo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.5rem;
+
+    color: #1683df;
+
+    font-weight: 700;
+  }
+
+
+  .menuButton {
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #25364d;
+  }
+
+
+  .mobileMenu {
+    position: absolute;
+
+    top: 4rem;
+
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    padding: 1rem;
+
+    border-bottom:
+      1px solid #e5eaf1;
+
+    box-shadow:
+      0 0.6rem 1.2rem
+      rgba(0, 0, 0, 0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0.4rem;
+  }
+
+
+  .mobileMenu a {
+    text-decoration: none;
+
+    color: #425066;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.8rem;
+
+    padding: 0.9rem;
+
+    border-radius: 0.5rem;
+  }
+
+
+  .mobileMenu a:hover {
+    background: #edf6ff;
+
+    color: #1683df;
+  }
+
+
+  .pageContent {
+    padding: 1rem;
+  }
+
+}

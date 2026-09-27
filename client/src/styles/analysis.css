@@ -1,0 +1,726 @@
+.analysisHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+
+.analysisLabel {
+  display: inline-block;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #3b82f6;
+
+  margin-bottom: 0.6rem;
+}
+
+
+.analysisHeader h1 {
+  margin: 0;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: #172033;
+}
+
+
+.analysisHeader p {
+  margin-top: 0.7rem;
+
+  max-width: 650px;
+
+  color: #667085;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+.analysisHeaderIcon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 16px;
+
+  background: #eef4ff;
+
+  color: #2563eb;
+}
+
+
+
+/* ========================================= */
+/* INPUT GRID */
+/* ========================================= */
+
+.analysisInputGrid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 0.8fr)
+    minmax(400px, 2fr);
+
+  gap: 1.4rem;
+
+  margin-bottom: 1.5rem;
+}
+
+
+.analysisPanel {
+  background: #ffffff;
+
+  border: 1px solid #e7eaf0;
+
+  border-radius: 18px;
+
+  padding: 1.4rem;
+
+  box-shadow:
+    0 4px 18px
+    rgba(16, 24, 40, 0.04);
+}
+
+
+.analysisPanelHeader {
+  display: flex;
+  align-items: center;
+
+  gap: 0.8rem;
+
+  margin-bottom: 1.2rem;
+}
+
+
+.analysisPanelIcon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #f1f5ff;
+
+  color: #3b82f6;
+}
+
+
+.analysisPanelHeader h2 {
+  margin: 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  color: #1d2939;
+}
+
+
+.analysisPanelHeader p {
+  margin: 0.2rem 0 0;
+
+  font-size: 0.82rem;
+
+  color: #98a2b3;
+}
+
+
+
+/* ========================================= */
+/* PATIENT SELECT */
+/* ========================================= */
+
+.patientSelect {
+  width: 100%;
+
+  padding: 0.85rem 1rem;
+
+  border-radius: 12px;
+
+  border: 1px solid #dfe4ec;
+
+  background: #ffffff;
+
+  color: #344054;
+
+  font-size: 0.92rem;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.patientSelect:focus {
+  border-color: #6695ff;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(59, 130, 246, 0.1);
+}
+
+
+.selectedPatient {
+  display: flex;
+  align-items: center;
+
+  gap: 0.8rem;
+
+  margin-top: 1rem;
+
+  padding: 0.9rem;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #edf0f4;
+
+  color: #475467;
+}
+
+
+.selectedPatient div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.15rem;
+}
+
+
+.selectedPatient span {
+  font-size: 0.72rem;
+
+  color: #98a2b3;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.05em;
+}
+
+
+.selectedPatient strong {
+  color: #1d2939;
+
+  font-size: 0.9rem;
+}
+
+
+
+/* ========================================= */
+/* SESSION NOTES */
+/* ========================================= */
+
+.sessionNotesPanel {
+  min-height: 300px;
+}
+
+
+.analysisTextarea {
+  width: 100%;
+  min-height: 190px;
+
+  resize: vertical;
+
+  box-sizing: border-box;
+
+  padding: 1rem;
+
+  border-radius: 14px;
+
+  border: 1px solid #dfe4ec;
+
+  background: #fbfcfe;
+
+  color: #1d2939;
+
+  font-size: 0.94rem;
+  line-height: 1.65;
+
+  font-family: inherit;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.analysisTextarea::placeholder {
+  color: #a4acb9;
+}
+
+
+.analysisTextarea:focus {
+  border-color: #6695ff;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(59, 130, 246, 0.1);
+}
+
+
+.analysisActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-top: 1rem;
+}
+
+
+.analysisActions span {
+  color: #98a2b3;
+
+  font-size: 0.78rem;
+}
+
+
+
+/* ========================================= */
+/* RUN BUTTON */
+/* ========================================= */
+
+.runAnalysisButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 0.8rem 1.2rem;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.runAnalysisButton:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 18px
+    rgba(37, 99, 235, 0.2);
+}
+
+
+.runAnalysisButton:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+}
+
+
+
+/* ========================================= */
+/* ERROR */
+/* ========================================= */
+
+.analysisError {
+  margin-bottom: 1.5rem;
+
+  padding: 0.9rem 1rem;
+
+  border-radius: 12px;
+
+  border: 1px solid #fecaca;
+
+  background: #fff6f6;
+
+  color: #b42318;
+
+  font-size: 0.88rem;
+}
+
+
+
+/* ========================================= */
+/* AGENTS RUNNING */
+/* ========================================= */
+
+.agentRunningPanel {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-bottom: 1.5rem;
+
+  padding: 1.2rem 1.3rem;
+
+  border-radius: 16px;
+
+  border: 1px solid #dbe7ff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbff,
+      #f1f6ff
+    );
+}
+
+
+.agentRunningPanel svg {
+  flex-shrink: 0;
+
+  color: #2563eb;
+}
+
+
+.agentRunningPanel h3 {
+  margin: 0;
+
+  font-size: 0.95rem;
+
+  color: #1d2939;
+}
+
+
+.agentRunningPanel p {
+  margin: 0.25rem 0 0;
+
+  font-size: 0.83rem;
+  line-height: 1.5;
+
+  color: #667085;
+}
+
+
+.spinIcon {
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+
+/* ========================================= */
+/* RESULTS */
+/* ========================================= */
+
+.analysisResults {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+
+  margin-top: 1.7rem;
+}
+
+
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding-bottom: 0.5rem;
+}
+
+
+.resultsHeader h2 {
+  margin: 0;
+
+  font-size: 1.4rem;
+
+  color: #1d2939;
+}
+
+
+.resultsHeader > svg {
+  color: #2563eb;
+}
+
+
+
+/* ========================================= */
+/* RESULT CARDS */
+/* ========================================= */
+
+.resultCard {
+  background: #ffffff;
+
+  border: 1px solid #e7eaf0;
+
+  border-radius: 17px;
+
+  padding: 1.4rem;
+
+  box-shadow:
+    0 4px 18px
+    rgba(16, 24, 40, 0.035);
+}
+
+
+.resultCardHeader {
+  display: flex;
+  align-items: center;
+
+  gap: 0.7rem;
+
+  margin-bottom: 1rem;
+
+  color: #2563eb;
+}
+
+
+.resultCardHeader h3 {
+  margin: 0;
+
+  font-size: 1rem;
+
+  color: #1d2939;
+}
+
+
+.resultCardHeader span {
+  display: block;
+
+  margin-top: 0.12rem;
+
+  font-size: 0.75rem;
+
+  color: #98a2b3;
+}
+
+
+
+/* ========================================= */
+/* PREVIOUS SESSION */
+/* ========================================= */
+
+.previousSessionContent {
+  display: grid;
+
+  gap: 1rem;
+}
+
+
+.previousSessionContent div {
+  padding: 1rem;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #eef1f5;
+}
+
+
+.previousSessionContent span {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  color: #667085;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.04em;
+}
+
+
+.previousSessionContent p {
+  margin: 0;
+
+  color: #344054;
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+
+
+/* ========================================= */
+/* ANALYSIS TEXT */
+/* ========================================= */
+
+.analysisText {
+  white-space: pre-wrap;
+
+  color: #344054;
+
+  line-height: 1.75;
+
+  font-size: 0.92rem;
+}
+
+
+
+/* ========================================= */
+/* SUPERVISOR RESULT */
+/* ========================================= */
+
+.supervisorResult {
+  border:
+    1px solid #cfdcff;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f8faff
+    );
+}
+
+
+.supervisorResult .resultCardHeader {
+  align-items: flex-start;
+}
+
+
+.finalAnalysisText {
+  padding: 1rem;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #e6ebf5;
+}
+
+
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media (
+  max-width: 1100px
+) {
+
+  .analysisInputGrid {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+
+@media (
+  max-width: 768px
+) {
+
+  .analysisHeader {
+    align-items: flex-start;
+  }
+
+
+  .analysisHeader h1 {
+    font-size: 1.65rem;
+  }
+
+
+  .analysisHeaderIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+
+  .analysisPanel {
+    padding: 1.1rem;
+  }
+
+
+  .analysisActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  .runAnalysisButton {
+    width: 100%;
+  }
+
+
+  .resultsHeader {
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (
+  max-width: 520px
+) {
+
+  .analysisHeaderIcon {
+    display: none;
+  }
+
+
+  .analysisTextarea {
+    min-height: 170px;
+  }
+
+
+  .resultCard {
+    padding: 1rem;
+  }
+
+
+  .agentRunningPanel {
+    align-items: flex-start;
+  }
+
+}

@@ -1,0 +1,1200 @@
+/* ============================= */
+/* PAGE */
+/* ============================= */
+
+.assistantPage {
+
+  width: 100%;
+
+  max-width: 90rem;
+
+  margin: auto;
+
+  padding: 2rem;
+
+  min-height: calc(
+    100vh - 4.5rem
+  );
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.assistantHeader {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  margin-bottom: 1.5rem;
+
+}
+
+
+.assistantLabel {
+
+  display: inline-block;
+
+  color: #1683df;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08rem;
+
+  margin-bottom: 0.5rem;
+
+}
+
+
+.assistantHeader h1 {
+
+  margin: 0;
+
+  color: #17324f;
+
+  font-size: clamp(
+    1.7rem,
+    3vw,
+    2.3rem
+  );
+
+}
+
+
+.assistantHeader p {
+
+  max-width: 42rem;
+
+  margin:
+    0.6rem 0 0;
+
+  color: #7c8998;
+
+  font-size: 0.88rem;
+
+  line-height: 1.6;
+
+}
+
+
+.assistantStatus {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.5rem;
+
+  padding:
+    0.5rem 0.8rem;
+
+  background: #ecfdf3;
+
+  color: #218256;
+
+  border-radius: 2rem;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+}
+
+
+.assistantStatus span {
+
+  width: 0.5rem;
+
+  height: 0.5rem;
+
+  background: #38b46c;
+
+  border-radius: 50%;
+
+}
+
+
+
+/* ============================= */
+/* CHAT */
+/* ============================= */
+
+.chatContainer {
+
+  background: white;
+
+  border:
+    1px solid #e4eaf1;
+
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  min-height: 38rem;
+
+}
+
+
+
+/* ============================= */
+/* MESSAGES AREA */
+/* ============================= */
+
+.messagesArea {
+
+  flex: 1;
+
+  overflow-y: auto;
+
+  padding: 1.5rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.5rem;
+
+}
+
+
+
+/* ============================= */
+/* MESSAGE ROW */
+/* ============================= */
+
+.messageRow {
+
+  display: flex;
+
+  gap: 0.8rem;
+
+  width: 100%;
+
+}
+
+
+.userMessageRow {
+
+  flex-direction: row-reverse;
+
+}
+
+
+.assistantMessageRow {
+
+  flex-direction: row;
+
+}
+
+
+
+/* ============================= */
+/* AVATAR */
+/* ============================= */
+
+.messageAvatar {
+
+  width: 2.4rem;
+
+  height: 2.4rem;
+
+  min-width: 2.4rem;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+.aiAvatar {
+
+  background: #e9f4ff;
+
+  color: #1683df;
+
+}
+
+
+.userAvatar {
+
+  background: #1683df;
+
+  color: white;
+
+}
+
+
+
+/* ============================= */
+/* MESSAGE BUBBLE */
+/* ============================= */
+
+.messageBubble {
+
+  max-width: 75%;
+
+  padding:
+    0.9rem 1rem;
+
+  border-radius: 0.9rem;
+
+}
+
+
+.messageBubble p {
+
+  margin: 0;
+
+  line-height: 1.7;
+
+  font-size: 0.88rem;
+
+}
+
+
+.assistantBubble {
+
+  background: #f7f9fc;
+
+  color: #45576c;
+
+  border:
+    1px solid #edf0f4;
+
+  border-top-left-radius: 0.2rem;
+
+}
+
+
+.userBubble {
+
+  background: #1683df;
+
+  color: white;
+
+  border-top-right-radius: 0.2rem;
+
+}
+
+
+
+/* ============================= */
+/* SOURCES */
+/* ============================= */
+
+.messageSources {
+
+  margin-top: 1rem;
+
+  padding-top: 1rem;
+
+  border-top:
+    1px solid #e4e9ef;
+
+}
+
+
+.sourcesTitle {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.4rem;
+
+  margin-bottom: 0.7rem;
+
+  color: #4d6177;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+}
+
+
+.sourcesGrid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 0.7rem;
+
+}
+
+
+
+/* ============================= */
+/* SUGGESTED QUESTIONS */
+/* ============================= */
+
+.suggestedQuestions {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.6rem;
+
+  padding:
+    1rem 1.5rem;
+
+  border-top:
+    1px solid #edf0f4;
+
+  background: #fbfcfe;
+
+}
+
+
+.suggestedQuestions button {
+
+  border:
+    1px solid #dfe7ef;
+
+  background: white;
+
+  color: #53677e;
+
+  border-radius: 2rem;
+
+  padding:
+    0.55rem 0.85rem;
+
+  font-size: 0.72rem;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+
+.suggestedQuestions button:hover {
+
+  color: #1683df;
+
+  border-color: #b9daf6;
+
+  background: #f1f8ff;
+
+}
+
+
+
+/* ============================= */
+/* INPUT AREA */
+/* ============================= */
+
+.chatInputContainer {
+
+  padding:
+    1rem 1.5rem;
+
+  border-top:
+    1px solid #edf0f4;
+
+  background: white;
+
+}
+
+
+.chatInput {
+
+  width: 100%;
+
+  min-height: 3.2rem;
+
+  padding:
+    0.6rem 0.7rem
+    0.6rem 1rem;
+
+  border:
+    1px solid #dce4ec;
+
+  border-radius: 0.8rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+
+  color: #1683df;
+
+}
+
+
+.chatInput:focus-within {
+
+  border-color: #1683df;
+
+  box-shadow:
+    0 0 0 0.15rem
+    rgba(22, 131, 223, 0.1);
+
+}
+
+
+.chatInput textarea {
+
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  resize: none;
+
+  background: transparent;
+
+  color: #364b61;
+
+  font-family: inherit;
+
+  font-size: 0.88rem;
+
+  line-height: 1.5;
+
+  max-height: 8rem;
+
+}
+
+
+.chatInput button {
+
+  width: 2.5rem;
+
+  height: 2.5rem;
+
+  min-width: 2.5rem;
+
+  border-radius: 0.65rem;
+
+  border: none;
+
+  background: #1683df;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+}
+
+
+.chatInput button:disabled {
+
+  background: #b6c3cf;
+
+  cursor: not-allowed;
+
+}
+
+
+.assistantDisclaimer {
+
+  margin:
+    0.6rem 0 0;
+
+  text-align: center;
+
+  color: #9aa4b0;
+
+  font-size: 0.68rem;
+
+}
+
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+  .messageBubble {
+
+    max-width: 82%;
+
+  }
+
+}
+
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .assistantPage {
+
+    padding: 1rem;
+
+    min-height:
+      calc(
+        100vh - 4rem
+      );
+
+  }
+
+
+  .assistantHeader {
+
+    align-items: flex-start;
+
+  }
+
+
+  .messageBubble {
+
+    max-width: 88%;
+
+  }
+
+
+  .sourcesGrid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .suggestedQuestions {
+
+    overflow-x: auto;
+
+    flex-wrap: nowrap;
+
+  }
+
+
+  .suggestedQuestions button {
+
+    white-space: nowrap;
+
+  }
+
+}
+
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+  .assistantHeader {
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+  }
+
+
+  .chatContainer {
+
+    min-height:
+      calc(
+        100vh - 12rem
+      );
+
+  }
+
+
+  .messagesArea {
+
+    padding: 1rem;
+
+  }
+
+
+  .messageAvatar {
+
+    width: 2rem;
+
+    height: 2rem;
+
+    min-width: 2rem;
+
+  }
+
+
+  .messageBubble {
+
+    max-width: 90%;
+
+    padding: 0.8rem;
+
+  }
+
+
+  .messageBubble p {
+
+    font-size: 0.82rem;
+
+  }
+
+
+  .chatInputContainer {
+
+    padding: 0.8rem;
+
+  }
+
+
+  .suggestedQuestions {
+
+    padding:
+      0.8rem;
+
+  }
+
+}
+
+
+/* ======================================== */
+/* FILE UPLOAD + BUTTON */
+/* ======================================== */
+
+.fileUploadButton {
+
+  width: 2.35rem;
+
+  height: 2.35rem;
+
+  min-width: 2.35rem;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #edf6ff;
+
+  color: #1683df;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+
+.fileUploadButton:hover {
+
+  background: #dceeff;
+
+  transform: scale(1.04);
+
+}
+
+
+/* Hide real file input */
+
+.fileUploadButton input {
+
+  display: none;
+
+}
+
+
+
+/* ======================================== */
+/* SELECTED PDF */
+/* ======================================== */
+
+.selectedFile {
+
+  width: fit-content;
+
+  max-width: 100%;
+
+  margin-bottom: 0.7rem;
+
+  padding:
+    0.55rem
+    0.7rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.55rem;
+
+  background: #edf6ff;
+
+  border:
+    1px solid #d4e9fb;
+
+  border-radius: 0.7rem;
+
+  color: #1683df;
+
+}
+
+
+.selectedFileInfo {
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+.selectedFileInfo span {
+
+  color: #1683df;
+
+  font-size: 0.6rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.04rem;
+
+}
+
+
+.selectedFileInfo strong {
+
+  max-width: 22rem;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+  color: #50667d;
+
+  font-size: 0.72rem;
+
+  font-weight: 500;
+
+}
+
+
+.selectedFile button {
+
+  width: 1.7rem;
+
+  height: 1.7rem;
+
+  margin-left: 0.25rem;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #75869a;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+.selectedFile button:hover {
+
+  background: #dbeaf6;
+
+  color: #344b61;
+
+}
+
+
+
+/* ======================================== */
+/* PDF ATTACHMENT INSIDE CHAT MESSAGE */
+/* ======================================== */
+
+.messageAttachment {
+
+  margin-top: 0.8rem;
+
+  padding:
+    0.5rem
+    0.65rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.45rem;
+
+  border-radius: 0.55rem;
+
+  font-size: 0.72rem;
+
+  overflow: hidden;
+
+}
+
+
+.userBubble .messageAttachment {
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.16
+    );
+
+  color: white;
+
+}
+
+
+.assistantBubble .messageAttachment {
+
+  background: #eaf4ff;
+
+  color: #52718c;
+
+}
+
+
+.messageAttachment span {
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+
+
+/* ======================================== */
+/* CHAT INPUT */
+/* ======================================== */
+
+.chatInput {
+
+  width: 100%;
+
+  min-height: 3.3rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+
+  padding:
+    0.5rem
+    0.6rem;
+
+  border:
+    1px solid #dce4ec;
+
+  border-radius: 0.8rem;
+
+  background: white;
+
+}
+
+
+.chatInput:focus-within {
+
+  border-color: #1683df;
+
+  box-shadow:
+    0 0 0 0.15rem
+    rgba(
+      22,
+      131,
+      223,
+      0.1
+    );
+
+}
+
+
+.chatInput textarea {
+
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+
+  outline: none;
+
+  resize: none;
+
+  background: transparent;
+
+  color: #364b61;
+
+  font-family: inherit;
+
+  font-size: 0.88rem;
+
+  line-height: 1.5;
+
+}
+
+
+
+/* ======================================== */
+/* SEND BUTTON */
+/* ======================================== */
+
+.sendButton {
+
+  width: 2.5rem;
+
+  height: 2.5rem;
+
+  min-width: 2.5rem;
+
+  border: none;
+
+  border-radius: 0.65rem;
+
+  background: #1683df;
+
+  color: white;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition: 0.2s;
+
+}
+
+
+.sendButton:hover:not(:disabled) {
+
+  background: #106fbe;
+
+}
+
+
+.sendButton:disabled {
+
+  background: #b7c4cf;
+
+  cursor: not-allowed;
+
+}
+
+
+
+/* ======================================== */
+/* MOBILE */
+/* ======================================== */
+
+@media (max-width: 768px) {
+
+  .selectedFileInfo strong {
+
+    max-width: 14rem;
+
+  }
+
+
+  .fileUploadButton {
+
+    width: 2.2rem;
+
+    height: 2.2rem;
+
+    min-width: 2.2rem;
+
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .selectedFile {
+
+    width: 100%;
+
+  }
+
+
+  .selectedFileInfo {
+
+    flex: 1;
+
+  }
+
+
+  .selectedFileInfo strong {
+
+    max-width: 12rem;
+
+  }
+
+
+  .chatInput {
+
+    gap: 0.5rem;
+
+  }
+
+}
+
+
+/* ============================= */
+/* CONVERSATION HISTORY */
+/* ============================= */
+
+.conversationHistory {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+
+.conversationHistoryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-bottom: 0.8rem;
+}
+
+
+.conversationHistoryHeader h3 {
+  margin: 0;
+}
+
+
+.newChatButton {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 0.65rem 0.9rem;
+
+  cursor: pointer;
+}
+
+
+.conversationList {
+  display: flex;
+  gap: 0.65rem;
+
+  overflow-x: auto;
+
+  padding-bottom: 0.3rem;
+}
+
+
+.conversationItem {
+  min-width: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.25rem;
+
+  padding: 0.75rem;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: white;
+
+  cursor: pointer;
+}
+
+
+.conversationItem span {
+  font-weight: 600;
+}
+
+
+.conversationItem small {
+  opacity: 0.65;
+}
+
+
+.activeConversation {
+  border-color: #176b87;
+
+  background: #f0f8fa;
+}

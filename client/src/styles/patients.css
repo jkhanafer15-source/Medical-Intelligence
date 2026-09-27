@@ -1,0 +1,479 @@
+/* ========================================= */
+/* HEADER */
+/* ========================================= */
+
+.patientsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1.5rem;
+
+  margin-bottom: 1.6rem;
+}
+
+.patientsLabel {
+  display: inline-block;
+
+  margin-bottom: 0.45rem;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #3b82f6;
+}
+
+.patientsHeader h1 {
+  margin: 0;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: #172033;
+}
+
+.patientsHeader p {
+  margin-top: 0.7rem;
+
+  max-width: 650px;
+
+  color: #667085;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* ========================================= */
+/* ADD PATIENT BUTTON */
+/* ========================================= */
+
+.addPatientButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  flex-shrink: 0;
+
+  padding: 0.8rem 1.1rem;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.addPatientButton:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 18px
+    rgba(37, 99, 235, 0.2);
+}
+
+
+/* ========================================= */
+/* SEARCH */
+/* ========================================= */
+
+.patientsSearch {
+  display: flex;
+  align-items: center;
+
+  gap: 0.7rem;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 0.8rem 1rem;
+
+  margin-bottom: 0.8rem;
+
+  border: 1px solid #dfe4ec;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  color: #98a2b3;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.patientsSearch:focus-within {
+  border-color: #6695ff;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(59, 130, 246, 0.1);
+}
+
+.patientsSearch input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #1d2939;
+
+  font-family: inherit;
+  font-size: 0.92rem;
+}
+
+.patientsSearch input::placeholder {
+  color: #a4acb9;
+}
+
+
+/* ========================================= */
+/* PATIENT COUNT */
+/* ========================================= */
+
+.patientsCount {
+  margin-bottom: 1.2rem;
+
+  color: #667085;
+
+  font-size: 0.82rem;
+}
+
+
+/* ========================================= */
+/* ERROR */
+/* ========================================= */
+
+.patientsError {
+  margin-bottom: 1.2rem;
+
+  padding: 0.9rem 1rem;
+
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+
+  background: #fff6f6;
+
+  color: #b42318;
+
+  font-size: 0.86rem;
+}
+
+
+/* ========================================= */
+/* LOADING */
+/* ========================================= */
+
+.patientsLoading {
+  padding: 2rem;
+
+  text-align: center;
+
+  color: #667085;
+
+  font-size: 0.9rem;
+}
+
+
+/* ========================================= */
+/* GRID */
+/* ========================================= */
+
+.patientsGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 1.2rem;
+}
+
+
+/* ========================================= */
+/* PATIENT CARD */
+/* ========================================= */
+
+.patientCard {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 260px;
+
+  padding: 1.25rem;
+
+  border: 1px solid #e7eaf0;
+  border-radius: 17px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 18px
+    rgba(16, 24, 40, 0.035);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.patientCard:hover {
+  transform: translateY(-2px);
+
+  border-color: #d7e2fb;
+
+  box-shadow:
+    0 10px 24px
+    rgba(16, 24, 40, 0.07);
+}
+
+
+/* ========================================= */
+/* CARD HEADER */
+/* ========================================= */
+
+.patientCardHeader {
+  display: flex;
+  align-items: center;
+
+  gap: 0.9rem;
+
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid #eef1f5;
+}
+
+.patientAvatar {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  background: #eef4ff;
+
+  color: #2563eb;
+}
+
+.patientCardHeader h2 {
+  margin: 0;
+
+  color: #1d2939;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.patientCardHeader span {
+  display: block;
+
+  margin-top: 0.25rem;
+
+  color: #98a2b3;
+
+  font-size: 0.76rem;
+}
+
+
+/* ========================================= */
+/* PATIENT INFORMATION */
+/* ========================================= */
+
+.patientInformation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.8rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.patientInformation div {
+  display: flex;
+  align-items: center;
+
+  gap: 0.55rem;
+
+  color: #667085;
+}
+
+.patientInformation svg {
+  flex-shrink: 0;
+
+  color: #7b8aa0;
+}
+
+.patientInformation span {
+  font-size: 0.83rem;
+  line-height: 1.45;
+
+  word-break: break-word;
+}
+
+
+/* ========================================= */
+/* SELECT BUTTON */
+/* ========================================= */
+
+.selectPatientButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.45rem;
+
+  width: 100%;
+
+  margin-top: auto;
+
+  padding: 0.75rem 0.9rem;
+
+  border: 1px solid #dbe5fb;
+  border-radius: 11px;
+
+  background: #f8faff;
+
+  color: #2563eb;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.selectPatientButton:hover {
+  background: #edf4ff;
+
+  border-color: #bdd1fb;
+
+  transform: translateY(-1px);
+}
+
+
+/* ========================================= */
+/* NO PATIENTS */
+/* ========================================= */
+
+.noPatients {
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 260px;
+
+  padding: 2rem;
+
+  border: 1px dashed #d8dee8;
+  border-radius: 16px;
+
+  background: #fbfcfe;
+
+  text-align: center;
+
+  color: #98a2b3;
+}
+
+.noPatients h2 {
+  margin: 0.7rem 0 0.3rem;
+
+  color: #344054;
+
+  font-size: 1rem;
+}
+
+.noPatients p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 0.85rem;
+}
+
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media (max-width: 1150px) {
+
+  .patientsGrid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .patientsHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .patientsHeader h1 {
+    font-size: 1.65rem;
+  }
+
+  .addPatientButton {
+    width: 100%;
+  }
+
+  .patientsGrid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .patientCard {
+    padding: 1rem;
+  }
+
+  .patientsSearch {
+    padding: 0.75rem 0.85rem;
+  }
+
+}

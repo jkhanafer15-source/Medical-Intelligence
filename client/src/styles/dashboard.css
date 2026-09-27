@@ -1,0 +1,699 @@
+/* ============================= */
+/* DASHBOARD HEADER */
+/* ============================= */
+
+.dashboardHeader {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  margin-bottom: 2rem;
+
+}
+
+
+.dashboardLabel {
+
+  display: inline-block;
+
+  color: #1683df;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08rem;
+
+  margin-bottom: 0.5rem;
+
+}
+
+
+.dashboardHeader h1 {
+
+  margin: 0;
+
+  font-size: clamp(
+    1.7rem,
+    3vw,
+    2.4rem
+  );
+
+  color: #16304c;
+
+}
+
+
+.dashboardHeader p {
+
+  margin: 0.7rem 0 0;
+
+  max-width: 38rem;
+
+  color: #748092;
+
+  line-height: 1.6;
+
+  font-size: 0.9rem;
+
+}
+
+
+.askAssistantButton {
+
+  border: none;
+
+  background: #1683df;
+
+  color: white;
+
+  padding:
+    0.85rem
+    1.2rem;
+
+  border-radius: 0.7rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.2s;
+
+}
+
+
+.askAssistantButton:hover {
+
+  background: #106fc0;
+
+}
+
+
+
+/* ============================= */
+/* STAT CARDS */
+/* ============================= */
+
+.dashboardStats {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(13rem, 1fr)
+    );
+
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+
+}
+
+
+
+/* ============================= */
+/* MAIN GRID */
+/* ============================= */
+
+.dashboardMainGrid {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(18rem, 1fr);
+
+  gap: 1.2rem;
+
+  margin-bottom: 2rem;
+
+}
+
+
+
+/* ============================= */
+/* PANEL */
+/* ============================= */
+
+.dashboardPanel {
+
+  background: white;
+
+  border:
+    1px solid #e5eaf1;
+
+  border-radius: 1rem;
+
+  padding: 1.4rem;
+
+  min-width: 0;
+
+}
+
+
+.panelHeader {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-bottom: 1.4rem;
+
+}
+
+
+.panelHeader h2 {
+
+  margin: 0;
+
+  font-size: 1.05rem;
+
+  color: #17324f;
+
+}
+
+
+.panelHeader p {
+
+  margin:
+    0.3rem 0 0;
+
+  color: #8490a0;
+
+  font-size: 0.78rem;
+
+}
+
+
+.textButton {
+
+  background: none;
+
+  border: none;
+
+  color: #1683df;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.3rem;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+}
+
+
+
+/* ============================= */
+/* SPECIALTIES */
+/* ============================= */
+
+.specialtyGrid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 0.8rem;
+
+}
+
+
+.specialtyCard {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.8rem;
+
+  padding: 1rem;
+
+  background: #f9fbfd;
+
+  border:
+    1px solid #edf0f4;
+
+  border-radius: 0.75rem;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+
+.specialtyCard:hover {
+
+  background: #f0f7ff;
+
+  border-color: #cfe5fa;
+
+}
+
+
+.specialtyIcon {
+
+  width: 2.6rem;
+
+  height: 2.6rem;
+
+  min-width: 2.6rem;
+
+  border-radius: 0.65rem;
+
+  background: #e8f4ff;
+
+  color: #1683df;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+.specialtyCard h3 {
+
+  margin: 0;
+
+  color: #243d59;
+
+  font-size: 0.85rem;
+
+}
+
+
+.specialtyCard span {
+
+  display: block;
+
+  margin-top: 0.25rem;
+
+  color: #8793a2;
+
+  font-size: 0.7rem;
+
+}
+
+
+
+/* ============================= */
+/* RECENT QUESTIONS */
+/* ============================= */
+
+.recentQuestions {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.7rem;
+
+}
+
+
+.questionItem {
+
+  display: flex;
+
+  gap: 0.8rem;
+
+  padding: 0.8rem;
+
+  border-radius: 0.7rem;
+
+  background: #f9fbfd;
+
+}
+
+
+.questionNumber {
+
+  width: 2rem;
+
+  height: 2rem;
+
+  min-width: 2rem;
+
+  border-radius: 50%;
+
+  background: #e8f4ff;
+
+  color: #1683df;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+.questionContent {
+
+  min-width: 0;
+
+}
+
+
+.questionContent p {
+
+  margin: 0;
+
+  font-size: 0.8rem;
+
+  line-height: 1.5;
+
+  color: #415267;
+
+}
+
+
+.questionContent span {
+
+  display: block;
+
+  margin-top: 0.3rem;
+
+  color: #9aa4b1;
+
+  font-size: 0.68rem;
+
+}
+
+
+.fullAssistantButton {
+
+  width: 100%;
+
+  margin-top: 1rem;
+
+  background: #edf6ff;
+
+  border: none;
+
+  color: #1683df;
+
+  padding: 0.8rem;
+
+  border-radius: 0.65rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 0.4rem;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+}
+
+
+
+/* ============================= */
+/* RAG STATUS */
+/* ============================= */
+
+.ragStatusSection {
+
+  background: white;
+
+  border:
+    1px solid #e5eaf1;
+
+  border-radius: 1rem;
+
+  padding: 1.3rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 1rem;
+
+}
+
+
+.ragStatusContent {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+}
+
+
+.ragIcon {
+
+  width: 3rem;
+
+  height: 3rem;
+
+  min-width: 3rem;
+
+  border-radius: 0.75rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #eaf4ff;
+
+  color: #1683df;
+
+}
+
+
+.ragStatusContent h2 {
+
+  margin: 0;
+
+  font-size: 0.95rem;
+
+  color: #17324f;
+
+}
+
+
+.ragStatusContent p {
+
+  margin:
+    0.35rem 0 0;
+
+  font-size: 0.78rem;
+
+  color: #8190a1;
+
+  line-height: 1.5;
+
+}
+
+
+.ragStatus {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.45rem;
+
+  background: #ecfdf3;
+
+  color: #268357;
+
+  padding:
+    0.45rem
+    0.75rem;
+
+  border-radius: 2rem;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+}
+
+
+.statusDot {
+
+  width: 0.5rem;
+
+  height: 0.5rem;
+
+  border-radius: 50%;
+
+  background: #34b36b;
+
+}
+
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+  .dashboardMainGrid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .specialtyGrid {
+
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+  }
+
+}
+
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .dashboardHeader {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+
+  }
+
+
+  .askAssistantButton {
+
+    width: 100%;
+
+  }
+
+
+  .dashboardStats {
+
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+  }
+
+
+  .specialtyGrid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .ragStatusSection {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+}
+
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+  .dashboardStats {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .dashboardPanel {
+
+    padding: 1rem;
+
+  }
+
+
+  .panelHeader {
+
+    align-items: flex-start;
+
+  }
+
+
+  .ragStatusContent {
+
+    align-items: flex-start;
+
+  }
+
+}

@@ -1,0 +1,838 @@
+/* ============================= */
+/* PAGE */
+/* ============================= */
+
+.loginPage {
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(22rem, 1fr)
+    minmax(25rem, 1fr);
+
+  background: #f7f9fc;
+
+}
+
+
+
+/* ============================= */
+/* LEFT BRAND SECTION */
+/* ============================= */
+
+.loginBrandSection {
+
+  min-height: 100vh;
+
+  padding:
+    clamp(2rem, 4vw, 4rem);
+
+  background:
+    linear-gradient(
+      145deg,
+      #0e5f9f,
+      #1683df
+    );
+
+  color: white;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+.loginBrandSection::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 28rem;
+
+  height: 28rem;
+
+  border-radius: 50%;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.06
+    );
+
+  right: -10rem;
+
+  top: -8rem;
+
+}
+
+
+.loginBrandSection::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 20rem;
+
+  height: 20rem;
+
+  border-radius: 50%;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.05
+    );
+
+  left: -8rem;
+
+  bottom: -8rem;
+
+}
+
+
+
+/* ============================= */
+/* BRAND LOGO */
+/* ============================= */
+
+.loginBrandTop {
+
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.8rem;
+
+}
+
+
+.loginLogoIcon {
+
+  width: 2.8rem;
+
+  height: 2.8rem;
+
+  border-radius: 0.75rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.15
+    );
+
+  color: white;
+
+}
+
+
+.loginBrandTop h2 {
+
+  margin: 0;
+
+  font-size: 1rem;
+
+}
+
+
+.loginBrandTop span {
+
+  display: block;
+
+  margin-top: 0.1rem;
+
+  font-size: 0.85rem;
+
+  color: #d8eeff;
+
+}
+
+
+
+/* ============================= */
+/* BRAND CONTENT */
+/* ============================= */
+
+.loginBrandContent {
+
+  position: relative;
+
+  z-index: 1;
+
+  max-width: 37rem;
+
+}
+
+
+.loginSmallLabel {
+
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  padding:
+    0.4rem 0.7rem;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.25
+    );
+
+  border-radius: 2rem;
+
+  font-size: 0.7rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08rem;
+
+  color: #def1ff;
+
+}
+
+
+.loginBrandContent h1 {
+
+  margin: 0;
+
+  font-size:
+    clamp(
+      2rem,
+      4vw,
+      3.5rem
+    );
+
+  line-height: 1.15;
+
+}
+
+
+.loginBrandContent h1 span {
+
+  color: #cceaff;
+
+}
+
+
+.loginBrandContent > p {
+
+  max-width: 34rem;
+
+  margin:
+    1.3rem 0 0;
+
+  line-height: 1.8;
+
+  color: #d8ebfa;
+
+  font-size: 0.92rem;
+
+}
+
+
+
+/* ============================= */
+/* FEATURES */
+/* ============================= */
+
+.loginFeatureList {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.9rem;
+
+  margin-top: 2rem;
+
+}
+
+
+.loginFeature {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+
+  color: #edf8ff;
+
+  font-size: 0.82rem;
+
+}
+
+
+.loginBrandFooter {
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+
+.loginBrandFooter p {
+
+  margin: 0;
+
+  color: #cde5f5;
+
+  font-size: 0.72rem;
+
+}
+
+
+
+/* ============================= */
+/* FORM SIDE */
+/* ============================= */
+
+.loginFormSection {
+
+  min-height: 100vh;
+
+  padding:
+    clamp(1.5rem, 5vw, 4rem);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #f8fafc;
+
+}
+
+
+.loginFormWrapper {
+
+  width: 100%;
+
+  max-width: 28rem;
+
+}
+
+
+
+/* ============================= */
+/* FORM HEADER */
+/* ============================= */
+
+.loginFormHeader {
+
+  margin-bottom: 2rem;
+
+}
+
+
+.loginFormHeader > span {
+
+  color: #1683df;
+
+  font-size: 0.72rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08rem;
+
+  font-weight: 700;
+
+}
+
+
+.loginFormHeader h1 {
+
+  margin:
+    0.5rem 0 0;
+
+  font-size:
+    clamp(
+      1.7rem,
+      3vw,
+      2.2rem
+    );
+
+  color: #17324f;
+
+}
+
+
+.loginFormHeader p {
+
+  margin:
+    0.6rem 0 0;
+
+  color: #8390a0;
+
+  line-height: 1.6;
+
+  font-size: 0.85rem;
+
+}
+
+
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.loginForm {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.2rem;
+
+}
+
+
+.loginInputGroup {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.45rem;
+
+}
+
+
+.loginInputGroup label {
+
+  color: #475c73;
+
+  font-size: 0.78rem;
+
+  font-weight: 600;
+
+}
+
+
+.loginInput {
+
+  min-height: 3rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+
+  padding:
+    0 0.9rem;
+
+  border:
+    1px solid #dce4ec;
+
+  border-radius: 0.7rem;
+
+  background: white;
+
+  color: #8a97a5;
+
+}
+
+
+.loginInput:focus-within {
+
+  border-color: #1683df;
+
+  box-shadow:
+    0 0 0 0.15rem
+    rgba(
+      22,
+      131,
+      223,
+      0.1
+    );
+
+}
+
+
+.loginInput input {
+
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #35495f;
+
+  font-size: 0.88rem;
+
+}
+
+
+
+/* ============================= */
+/* PASSWORD */
+/* ============================= */
+
+.passwordLabel {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 1rem;
+
+}
+
+
+.forgotPassword {
+
+  padding: 0;
+
+  border: none;
+
+  background: none;
+
+  color: #1683df;
+
+  cursor: pointer;
+
+  font-size: 0.72rem;
+
+}
+
+
+.showPasswordButton {
+
+  padding: 0;
+
+  border: none;
+
+  background: none;
+
+  color: #8390a0;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+
+/* ============================= */
+/* REMEMBER */
+/* ============================= */
+
+.rememberMe {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.5rem;
+
+  color: #66778a;
+
+  font-size: 0.76rem;
+
+  cursor: pointer;
+
+}
+
+
+.rememberMe input {
+
+  accent-color: #1683df;
+
+}
+
+
+
+/* ============================= */
+/* LOGIN BUTTON */
+/* ============================= */
+
+.loginButton {
+
+  width: 100%;
+
+  min-height: 3rem;
+
+  border: none;
+
+  border-radius: 0.7rem;
+
+  background: #1683df;
+
+  color: white;
+
+  font-size: 0.88rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+
+.loginButton:hover {
+
+  background: #106fbe;
+
+}
+
+
+
+/* ============================= */
+/* SECURITY INFO */
+/* ============================= */
+
+.loginSecurity {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 0.6rem;
+
+  margin-top: 1.5rem;
+
+  padding: 0.9rem;
+
+  background: #eef7ff;
+
+  border-radius: 0.7rem;
+
+  color: #4780aa;
+
+}
+
+
+.loginSecurity svg {
+
+  min-width: 1rem;
+
+  margin-top: 0.1rem;
+
+}
+
+
+.loginSecurity p {
+
+  margin: 0;
+
+  font-size: 0.68rem;
+
+  line-height: 1.6;
+
+}
+
+
+
+/* ============================= */
+/* MOBILE LOGO */
+/* ============================= */
+
+.loginMobileLogo {
+
+  display: none;
+
+}
+
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .loginPage {
+
+    grid-template-columns:
+      minmax(18rem, 0.8fr)
+      minmax(22rem, 1fr);
+
+  }
+
+
+  .loginBrandContent h1 {
+
+    font-size: 2.2rem;
+
+  }
+
+}
+
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .loginPage {
+
+    display: block;
+
+  }
+
+
+  .loginBrandSection {
+
+    display: none;
+
+  }
+
+
+  .loginFormSection {
+
+    min-height: 100vh;
+
+    padding:
+      1.5rem;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    justify-content: center;
+
+  }
+
+
+  .loginFormWrapper {
+
+    max-width: 32rem;
+
+    margin: 0 auto;
+
+  }
+
+
+  .loginMobileLogo {
+
+    width: 100%;
+
+    max-width: 32rem;
+
+    margin:
+      0 auto
+      2.5rem;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.7rem;
+
+  }
+
+
+  .loginMobileLogo
+  .loginLogoIcon {
+
+    background: #1683df;
+
+  }
+
+
+  .loginMobileLogo div:last-child {
+
+    display: flex;
+
+    flex-direction: column;
+
+  }
+
+
+  .loginMobileLogo strong {
+
+    color: #17324f;
+
+    font-size: 0.9rem;
+
+  }
+
+
+  .loginMobileLogo span {
+
+    color: #1683df;
+
+    font-size: 0.78rem;
+
+  }
+
+}
+
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+  .loginFormSection {
+
+    padding: 1rem;
+
+  }
+
+
+  .loginFormHeader {
+
+    margin-bottom: 1.5rem;
+
+  }
+
+
+  .loginInput {
+
+    min-height: 2.8rem;
+
+  }
+
+}

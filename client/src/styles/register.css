@@ -1,0 +1,196 @@
+.registerPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5f9fc,
+      #e8f1f7
+    );
+
+  font-family:
+    Arial,
+    sans-serif;
+}
+
+
+.registerCard {
+  width: 100%;
+  max-width: 430px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 2.5rem;
+
+  box-shadow:
+    0 20px 50px
+    rgba(0, 0, 0, 0.08);
+}
+
+
+.registerHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.registerLogo {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 14px;
+
+  background: #176b87;
+
+  color: white;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.registerHeader h1 {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 1.8rem;
+}
+
+
+.registerHeader p {
+  margin-top: 0.6rem;
+
+  color: #6b7280;
+
+  font-size: 0.9rem;
+}
+
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.1rem;
+}
+
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.45rem;
+}
+
+
+.inputGroup label {
+  color: #374151;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+.inputGroup input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 0.9rem 1rem;
+
+  border:
+    1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 0.95rem;
+}
+
+
+.inputGroup input:focus {
+  border-color: #176b87;
+}
+
+
+.registerButton {
+  margin-top: 0.5rem;
+
+  padding: 0.95rem;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #176b87;
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.registerButton:hover {
+  background: #12566d;
+}
+
+
+.registerButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.registerError {
+  padding: 0.8rem;
+
+  border-radius: 8px;
+
+  background: #fee2e2;
+
+  color: #b91c1c;
+
+  font-size: 0.9rem;
+}
+
+
+.loginText {
+  margin-top: 1.5rem;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  font-size: 0.9rem;
+}
+
+
+.loginText button {
+  margin-left: 0.35rem;
+
+  border: none;
+  background: none;
+
+  color: #176b87;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
