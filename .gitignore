@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+server/.env
+client/.env
+
+# Node
+node_modules/
+client/node_modules/
+client/build/
+client/dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+server/venv/
+server/.venv/
+
+# Uploads
+server/uploads/
+
+# Vector databases
+vector_db/
+dataset/vector_db/
+
+# Generated embeddings
+dataset/embeddings.npy
+dataset/chunks.json
+
+# IDE
+.vscode/
+.idea/
